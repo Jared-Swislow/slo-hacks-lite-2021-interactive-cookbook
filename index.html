@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Cookbook</title>
+    <!--
+    <link rel="icon"
+          href="URL to icon here"/>
+    -->
+
+    <script src="/ingredientPopulate.js" defer></script>
+    <script src="/search.js" defer></script>
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <h1 style="color: white;">
+      Welcome to the interactive cookbook!
+    </h1>
+    
+    <h2 style="color: white;">
+      What ingredients do you have? <br>
+      <form>
+        <input type="text" placeholder="Search ingredients here..." name="ingredient" onkeyup="searchFor();" id="search-ingredients">
+        <button type="button" tag="submitButton" onclick="location.href='/recommendedRecipes.html';">
+          Find me a recipe!
+        </button>
+      </form>
+      
+    </h2>
+
+    <div id="ingredientDisplay">
+      
+    </div>
+    
+    <div id="pickedIngredients">
+      
+    </div>
+    
+    <!--
+    <div id="ingredientCheckboxList">
+      <li>
+        <input type="checkbox" id="myCheckbox1" />
+        <label for="myCheckbox1"><img src="https://cdn.glitch.com/9a64c9c5-0c14-404a-9260-d1d73f22baa5%2Fcarrot.jfif?v=1611432778646" /><h2>
+          Carrots
+          </h2></label>
+      </li>
+    </div>
+    -->
+  </body>
+</html>
